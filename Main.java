@@ -12,10 +12,15 @@ public class Main {
 
     static class CounterThread extends Thread {
 
-        @Override
-        public void run() {
-            // Counting logic will be added in the next commit.
-        }
+	    @Override
+	    public void run() {
 
-    }
+	        long sum = 0;
+
+	        for (long number = 1; number <= 1000000; number++) {
+	            sum += number;
+	        }
+
+	    }
+}
 }
